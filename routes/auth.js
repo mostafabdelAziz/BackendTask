@@ -6,6 +6,7 @@ const express = require('express');
 const router = express.Router();
  
 router.post('/', async (req, res) => {
+    console.log("lllllllll")
     // First Validate The HTTP Request
     const { error } = validate(req.body);
     if (error) {
